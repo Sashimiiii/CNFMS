@@ -1,0 +1,867 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3BECB469-158A-4A41-993C-123F597F5725}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CNFMS.My.MyApplication</StartupObject>
+    <RootNamespace>CNFMS</RootNamespace>
+    <AssemblyName>CNFMS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CNFMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CNFMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ICON.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\DLL files\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\DLL files\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Renci.SshNet, Version=2020.0.2.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2020.0.2\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cyrstal Report Data\CrystalFuelReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalFuelReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\CrystalReportIsland1CutOff.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportIsland1CutOff.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\CrystalReportIsland2CutOff.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportIsland2CutOff.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\CrystalReportIsland3CutOff.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportIsland3CutOff.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\FuelReportDataTable.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FuelReportDataTable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\FuelReportDataTable.vb">
+      <DependentUpon>FuelReportDataTable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\Island1CashSaleDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Island1CashSaleDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\Island1CashSaleDataSet.vb">
+      <DependentUpon>Island1CashSaleDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\Island1CashSalesCrystalReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Island1CashSalesCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\Island1CutOffDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Island1CutOffDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\Island1CutOffDataSet.vb">
+      <DependentUpon>Island1CutOffDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\Island2CashSaleDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Island2CashSaleDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\Island2CashSalesCrystalReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Island2CashSalesCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\Island2CutOffDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Island2CutOffDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\Island3CashSaleDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Island3CashSaleDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\Island3CashSalesCrystalReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Island3CashSalesCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\Island3CutOffDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Island3CutOffDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\PayrollData.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PayrollData.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\PayrollReportData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PayrollReportData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cyrstal Report Data\PayrollReportData.vb">
+      <DependentUpon>PayrollReportData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEmployee.Designer.vb">
+      <DependentUpon>AddEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEmployeePayroll.Designer.vb">
+      <DependentUpon>AddEmployeePayroll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEmployeePayroll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddIsland3Report.Designer.vb">
+      <DependentUpon>AddIsland3Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddIsland3Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddUser.Designer.vb">
+      <DependentUpon>AddUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ArchivedPayrolPdf.Designer.vb">
+      <DependentUpon>ArchivedPayrolPdf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ArchivedPayrolPdf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PrintPayroll.Designer.vb">
+      <DependentUpon>PrintPayroll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PrintPayroll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateEmployee.Designer.vb">
+      <DependentUpon>UpdateEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UpdateEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="notification\successNotification.Designer.vb">
+      <DependentUpon>successNotification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="notification\successNotification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherClass\DateTimePickerUI.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OtherClass\SQLConn.vb" />
+    <Compile Include="MainPanel.Designer.vb">
+      <DependentUpon>MainPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddFuel.Designer.vb">
+      <DependentUpon>AddFuel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddFuel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Addisland1Report.Designer.vb">
+      <DependentUpon>Addisland1Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Addisland1Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddIsland2Report.Designer.vb">
+      <DependentUpon>AddIsland2Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddIsland2Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\AddPayrollPanel.Designer.vb">
+      <DependentUpon>AddPayrollPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\AddPayrollPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\AdminAccountInfo.Designer.vb">
+      <DependentUpon>AdminAccountInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\AdminAccountInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\AdminPanel.Designer.vb">
+      <DependentUpon>AdminPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\AdminPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\ArchivedPayrollData.Designer.vb">
+      <DependentUpon>ArchivedPayrollData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\ArchivedPayrollData.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\CashSalesPanel.Designer.vb">
+      <DependentUpon>CashSalesPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\CashSalesPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\CutOff_Panel.Designer.vb">
+      <DependentUpon>CutOff_Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\CutOff_Panel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\Dashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\EmployeeInfo.Designer.vb">
+      <DependentUpon>EmployeeInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\EmployeeInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\EmployeeInformation.Designer.vb">
+      <DependentUpon>EmployeeInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\EmployeeInformation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\ExportViewerPayroll.Designer.vb">
+      <DependentUpon>ExportViewerPayroll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\ExportViewerPayroll.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\FuelReportPanel.Designer.vb">
+      <DependentUpon>FuelReportPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\FuelReportPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\InventoryPanel.Designer.vb">
+      <DependentUpon>InventoryPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\InventoryPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\Island1CashSalePanel.Designer.vb">
+      <DependentUpon>Island1CashSalePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\Island1CashSalePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\Island1Panel.Designer.vb">
+      <DependentUpon>Island1Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\Island1Panel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\Island2CashSalePanel.Designer.vb">
+      <DependentUpon>Island2CashSalePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\Island2CashSalePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\island2Panel.Designer.vb">
+      <DependentUpon>island2Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\island2Panel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\Island3CashSalePanel.Designer.vb">
+      <DependentUpon>Island3CashSalePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\Island3CashSalePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\Island3Panel.Designer.vb">
+      <DependentUpon>Island3Panel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\Island3Panel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\PayrollPanel.Designer.vb">
+      <DependentUpon>PayrollPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\PayrollPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\PriceFuelPanel.Designer.vb">
+      <DependentUpon>PriceFuelPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\PriceFuelPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\PrintFuelReport.Designer.vb">
+      <DependentUpon>PrintFuelReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\PrintFuelReport.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\PrintIsland1CashSales.Designer.vb">
+      <DependentUpon>PrintIsland1CashSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\PrintIsland1CashSales.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\PrintIsland1Report.Designer.vb">
+      <DependentUpon>PrintIsland1Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\PrintIsland1Report.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\PrintIsland2CashSales.Designer.vb">
+      <DependentUpon>PrintIsland2CashSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\PrintIsland2CashSales.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\PrintIsland2Report.Designer.vb">
+      <DependentUpon>PrintIsland2Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\PrintIsland2Report.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\PrintIsland3CashSales.Designer.vb">
+      <DependentUpon>PrintIsland3CashSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\PrintIsland3CashSales.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\PrintIsland3Report.Designer.vb">
+      <DependentUpon>PrintIsland3Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\PrintIsland3Report.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\PrintPreviewPayroll.Designer.vb">
+      <DependentUpon>PrintPreviewPayroll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\PrintPreviewPayroll.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sub Panel\UserSettingUpdate.Designer.vb">
+      <DependentUpon>UserSettingUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sub Panel\UserSettingUpdate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cyrstal Report Data\CrystalFuelReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalFuelReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cyrstal Report Data\CrystalReportIsland1CutOff.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportIsland1CutOff.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cyrstal Report Data\CrystalReportIsland2CutOff.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportIsland2CutOff.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cyrstal Report Data\CrystalReportIsland3CutOff.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportIsland3CutOff.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cyrstal Report Data\Island1CashSalesCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Island1CashSalesCrystalReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cyrstal Report Data\Island2CashSalesCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Island2CashSalesCrystalReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cyrstal Report Data\Island3CashSalesCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Island3CashSalesCrystalReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cyrstal Report Data\PayrollData.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PayrollData.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEmployee.resx">
+      <DependentUpon>AddEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEmployeePayroll.resx">
+      <DependentUpon>AddEmployeePayroll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddIsland3Report.resx">
+      <DependentUpon>AddIsland3Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddUser.resx">
+      <DependentUpon>AddUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ArchivedPayrolPdf.resx">
+      <DependentUpon>ArchivedPayrolPdf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrintPayroll.resx">
+      <DependentUpon>PrintPayroll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateEmployee.resx">
+      <DependentUpon>UpdateEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPanel.resx">
+      <DependentUpon>MainPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notification\successNotification.resx">
+      <DependentUpon>successNotification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddFuel.resx">
+      <DependentUpon>AddFuel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Addisland1Report.resx">
+      <DependentUpon>Addisland1Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddIsland2Report.resx">
+      <DependentUpon>AddIsland2Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\AddPayrollPanel.resx">
+      <DependentUpon>AddPayrollPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\AdminAccountInfo.resx">
+      <DependentUpon>AdminAccountInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\AdminPanel.resx">
+      <DependentUpon>AdminPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\ArchivedPayrollData.resx">
+      <DependentUpon>ArchivedPayrollData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\CashSalesPanel.resx">
+      <DependentUpon>CashSalesPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\CutOff_Panel.resx">
+      <DependentUpon>CutOff_Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\EmployeeInfo.resx">
+      <DependentUpon>EmployeeInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\EmployeeInformation.resx">
+      <DependentUpon>EmployeeInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\ExportViewerPayroll.resx">
+      <DependentUpon>ExportViewerPayroll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\FuelReportPanel.resx">
+      <DependentUpon>FuelReportPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\InventoryPanel.resx">
+      <DependentUpon>InventoryPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\Island1CashSalePanel.resx">
+      <DependentUpon>Island1CashSalePanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\Island1Panel.resx">
+      <DependentUpon>Island1Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\Island2CashSalePanel.resx">
+      <DependentUpon>Island2CashSalePanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\island2Panel.resx">
+      <DependentUpon>island2Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\Island3CashSalePanel.resx">
+      <DependentUpon>Island3CashSalePanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\Island3Panel.resx">
+      <DependentUpon>Island3Panel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\PayrollPanel.resx">
+      <DependentUpon>PayrollPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\PriceFuelPanel.resx">
+      <DependentUpon>PriceFuelPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\PrintFuelReport.resx">
+      <DependentUpon>PrintFuelReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\PrintIsland1CashSales.resx">
+      <DependentUpon>PrintIsland1CashSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\PrintIsland1Report.resx">
+      <DependentUpon>PrintIsland1Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\PrintIsland2CashSales.resx">
+      <DependentUpon>PrintIsland2CashSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\PrintIsland2Report.resx">
+      <DependentUpon>PrintIsland2Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\PrintIsland3CashSales.resx">
+      <DependentUpon>PrintIsland3CashSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\PrintIsland3Report.resx">
+      <DependentUpon>PrintIsland3Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\PrintPreviewPayroll.resx">
+      <DependentUpon>PrintPreviewPayroll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sub Panel\UserSettingUpdate.resx">
+      <DependentUpon>UserSettingUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\CNFMS.exe.config" />
+    <None Include="Cyrstal Report Data\FuelReportDataTable.xsc">
+      <DependentUpon>FuelReportDataTable.xsd</DependentUpon>
+    </None>
+    <None Include="Cyrstal Report Data\FuelReportDataTable.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FuelReportDataTable.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Cyrstal Report Data\FuelReportDataTable.xss">
+      <DependentUpon>FuelReportDataTable.xsd</DependentUpon>
+    </None>
+    <None Include="Cyrstal Report Data\Island1CashSaleDataSet.xsc">
+      <DependentUpon>Island1CashSaleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cyrstal Report Data\Island1CashSaleDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Island1CashSaleDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Cyrstal Report Data\Island1CashSaleDataSet.xss">
+      <DependentUpon>Island1CashSaleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cyrstal Report Data\Island1CutOffDataSet.xsc">
+      <DependentUpon>Island1CutOffDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cyrstal Report Data\Island1CutOffDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Island1CutOffDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Cyrstal Report Data\Island1CutOffDataSet.xss">
+      <DependentUpon>Island1CutOffDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cyrstal Report Data\Island2CashSaleDataSet.xsc">
+      <DependentUpon>Island2CashSaleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cyrstal Report Data\Island2CashSaleDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Island2CashSaleDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Cyrstal Report Data\Island2CashSaleDataSet.xss">
+      <DependentUpon>Island2CashSaleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cyrstal Report Data\Island2CutOffDataSet.xsc">
+      <DependentUpon>Island2CutOffDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cyrstal Report Data\Island2CutOffDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Island2CutOffDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Cyrstal Report Data\Island2CutOffDataSet.xss">
+      <DependentUpon>Island2CutOffDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cyrstal Report Data\Island3CashSaleDataSet.xsc">
+      <DependentUpon>Island3CashSaleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cyrstal Report Data\Island3CashSaleDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Island3CashSaleDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Cyrstal Report Data\Island3CashSaleDataSet.xss">
+      <DependentUpon>Island3CashSaleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cyrstal Report Data\Island3CutOffDataSet.xsc">
+      <DependentUpon>Island3CutOffDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cyrstal Report Data\Island3CutOffDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Island3CutOffDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Cyrstal Report Data\Island3CutOffDataSet.xss">
+      <DependentUpon>Island3CutOffDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cyrstal Report Data\PayrollReportData.xsc">
+      <DependentUpon>PayrollReportData.xsd</DependentUpon>
+    </None>
+    <None Include="Cyrstal Report Data\PayrollReportData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PayrollReportData.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Cyrstal Report Data\PayrollReportData.xss">
+      <DependentUpon>PayrollReportData.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalenderWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendar-24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendar-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cutoffBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cutoffWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboardBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboardWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employeeblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employeeWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fuelreportBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fuelreportWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventoryBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventoryWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payrollBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payrollWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesreportBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesreportWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\CNFMS.exe" />
+    <None Include="bin\Debug\CNFMS.pdb" />
+    <None Include="bin\Debug\CNFMS.xml" />
+    <None Include="bin\Debug\CrystalDecisions.CrystalReports.Engine.dll" />
+    <None Include="bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll" />
+    <None Include="bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll" />
+    <None Include="bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll" />
+    <None Include="bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll" />
+    <None Include="bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll" />
+    <None Include="bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll" />
+    <None Include="bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll" />
+    <None Include="bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll" />
+    <None Include="bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll" />
+    <None Include="bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll" />
+    <None Include="bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll" />
+    <None Include="bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll" />
+    <None Include="bin\Debug\CrystalDecisions.ReportSource.dll" />
+    <None Include="bin\Debug\CrystalDecisions.Shared.dll" />
+    <None Include="bin\Debug\CrystalDecisions.Windows.Forms.dll" />
+    <None Include="bin\Debug\Guna.UI.dll" />
+    <None Include="bin\Debug\MySql.Data.DLL" />
+    <None Include="bin\Debug\Renci.SshNet.dll" />
+    <None Include="bin\Debug\Renci.SshNet.xml" />
+    <None Include="bin\Debug\stdole.dll" />
+    <Content Include="ICON.ico" />
+    <None Include="Resources\icons8-total-sales-50.png" />
+    <None Include="Resources\salesReportBlack.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

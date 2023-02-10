@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PayrollReportData" targetNamespace="http://tempuri.org/PayrollReportData.xsd" xmlns:mstns="http://tempuri.org/PayrollReportData.xsd" xmlns="http://tempuri.org/PayrollReportData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PayrollReportData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PayrollReportData" msprop:Generator_UserDSName="PayrollReportData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="payroll_data" msprop:Generator_TableClassName="payroll_dataDataTable" msprop:Generator_TableVarName="tablepayroll_data" msprop:Generator_RowChangedName="payroll_dataRowChanged" msprop:Generator_TablePropName="payroll_data" msprop:Generator_RowDeletingName="payroll_dataRowDeleting" msprop:Generator_RowChangingName="payroll_dataRowChanging" msprop:Generator_RowEvHandlerName="payroll_dataRowChangeEventHandler" msprop:Generator_RowDeletedName="payroll_dataRowDeleted" msprop:Generator_RowClassName="payroll_dataRow" msprop:Generator_UserTableName="payroll_data" msprop:Generator_RowEvArgName="payroll_dataRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Name_Employee" msprop:Generator_ColumnVarNameInTable="columnName_Employee" msprop:Generator_ColumnPropNameInRow="Name_Employee" msprop:Generator_ColumnPropNameInTable="Name_EmployeeColumn" msprop:Generator_UserColumnName="Name_Employee" type="xs:string" minOccurs="0" />
+              <xs:element name="Designation" msprop:Generator_ColumnVarNameInTable="columnDesignation" msprop:Generator_ColumnPropNameInRow="Designation" msprop:Generator_ColumnPropNameInTable="DesignationColumn" msprop:Generator_UserColumnName="Designation" type="xs:string" minOccurs="0" />
+              <xs:element name="BasicDaily" msprop:Generator_ColumnVarNameInTable="columnBasicDaily" msprop:Generator_ColumnPropNameInRow="BasicDaily" msprop:Generator_ColumnPropNameInTable="BasicDailyColumn" msprop:Generator_UserColumnName="BasicDaily" type="xs:string" minOccurs="0" />
+              <xs:element name="numberDays" msprop:Generator_ColumnVarNameInTable="columnnumberDays" msprop:Generator_ColumnPropNameInRow="numberDays" msprop:Generator_ColumnPropNameInTable="numberDaysColumn" msprop:Generator_UserColumnName="numberDays" type="xs:string" minOccurs="0" />
+              <xs:element name="BasicPay" msprop:Generator_ColumnVarNameInTable="columnBasicPay" msprop:Generator_ColumnPropNameInRow="BasicPay" msprop:Generator_ColumnPropNameInTable="BasicPayColumn" msprop:Generator_UserColumnName="BasicPay" type="xs:string" minOccurs="0" />
+              <xs:element name="RegularHoliday" msprop:Generator_ColumnVarNameInTable="columnRegularHoliday" msprop:Generator_ColumnPropNameInRow="RegularHoliday" msprop:Generator_ColumnPropNameInTable="RegularHolidayColumn" msprop:Generator_UserColumnName="RegularHoliday" type="xs:string" minOccurs="0" />
+              <xs:element name="SpecialHoliday" msprop:Generator_ColumnVarNameInTable="columnSpecialHoliday" msprop:Generator_ColumnPropNameInRow="SpecialHoliday" msprop:Generator_ColumnPropNameInTable="SpecialHolidayColumn" msprop:Generator_UserColumnName="SpecialHoliday" type="xs:string" minOccurs="0" />
+              <xs:element name="OT" msprop:Generator_ColumnVarNameInTable="columnOT" msprop:Generator_ColumnPropNameInRow="OT" msprop:Generator_ColumnPropNameInTable="OTColumn" msprop:Generator_UserColumnName="OT" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalPay" msprop:Generator_ColumnVarNameInTable="columnTotalPay" msprop:Generator_ColumnPropNameInRow="TotalPay" msprop:Generator_ColumnPropNameInTable="TotalPayColumn" msprop:Generator_UserColumnName="TotalPay" type="xs:string" minOccurs="0" />
+              <xs:element name="SSS" msprop:Generator_ColumnVarNameInTable="columnSSS" msprop:Generator_ColumnPropNameInRow="SSS" msprop:Generator_ColumnPropNameInTable="SSSColumn" msprop:Generator_UserColumnName="SSS" type="xs:string" minOccurs="0" />
+              <xs:element name="PHIC" msprop:Generator_ColumnVarNameInTable="columnPHIC" msprop:Generator_ColumnPropNameInRow="PHIC" msprop:Generator_ColumnPropNameInTable="PHICColumn" msprop:Generator_UserColumnName="PHIC" type="xs:string" minOccurs="0" />
+              <xs:element name="HDMF" msprop:Generator_ColumnVarNameInTable="columnHDMF" msprop:Generator_ColumnPropNameInRow="HDMF" msprop:Generator_ColumnPropNameInTable="HDMFColumn" msprop:Generator_UserColumnName="HDMF" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalDeduction" msprop:Generator_ColumnVarNameInTable="columnTotalDeduction" msprop:Generator_ColumnPropNameInRow="TotalDeduction" msprop:Generator_ColumnPropNameInTable="TotalDeductionColumn" msprop:Generator_UserColumnName="TotalDeduction" type="xs:string" minOccurs="0" />
+              <xs:element name="NetPay" msprop:Generator_ColumnVarNameInTable="columnNetPay" msprop:Generator_ColumnPropNameInRow="NetPay" msprop:Generator_ColumnPropNameInTable="NetPayColumn" msprop:Generator_UserColumnName="NetPay" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

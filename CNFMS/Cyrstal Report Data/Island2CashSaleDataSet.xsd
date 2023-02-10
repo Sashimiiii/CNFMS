@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Island2CashSaleDataSet" targetNamespace="http://tempuri.org/Island2CashSaleDataSet.xsd" xmlns:mstns="http://tempuri.org/Island2CashSaleDataSet.xsd" xmlns="http://tempuri.org/Island2CashSaleDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Island2CashSaleDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Island2CashSaleDataSet" msprop:Generator_UserDSName="Island2CashSaleDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="island2_cashsale" msprop:Generator_TableClassName="island2_cashsaleDataTable" msprop:Generator_TableVarName="tableisland2_cashsale" msprop:Generator_RowChangedName="island2_cashsaleRowChanged" msprop:Generator_TablePropName="island2_cashsale" msprop:Generator_RowDeletingName="island2_cashsaleRowDeleting" msprop:Generator_RowChangingName="island2_cashsaleRowChanging" msprop:Generator_RowEvHandlerName="island2_cashsaleRowChangeEventHandler" msprop:Generator_RowDeletedName="island2_cashsaleRowDeleted" msprop:Generator_RowClassName="island2_cashsaleRow" msprop:Generator_UserTableName="island2_cashsale" msprop:Generator_RowEvArgName="island2_cashsaleRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Date_CutOff" msprop:Generator_ColumnVarNameInTable="columnDate_CutOff" msprop:Generator_ColumnPropNameInRow="Date_CutOff" msprop:Generator_ColumnPropNameInTable="Date_CutOffColumn" msprop:Generator_UserColumnName="Date_CutOff" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesRegular" msprop:Generator_ColumnVarNameInTable="columnSalesRegular" msprop:Generator_ColumnPropNameInRow="SalesRegular" msprop:Generator_ColumnPropNameInTable="SalesRegularColumn" msprop:Generator_UserColumnName="SalesRegular" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesPremium" msprop:Generator_ColumnVarNameInTable="columnSalesPremium" msprop:Generator_ColumnPropNameInRow="SalesPremium" msprop:Generator_ColumnPropNameInTable="SalesPremiumColumn" msprop:Generator_UserColumnName="SalesPremium" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesDiesel" msprop:Generator_ColumnVarNameInTable="columnSalesDiesel" msprop:Generator_ColumnPropNameInRow="SalesDiesel" msprop:Generator_ColumnPropNameInTable="SalesDieselColumn" msprop:Generator_UserColumnName="SalesDiesel" type="xs:string" minOccurs="0" />
+              <xs:element name="Total_Sale" msprop:Generator_ColumnVarNameInTable="columnTotal_Sale" msprop:Generator_ColumnPropNameInRow="Total_Sale" msprop:Generator_ColumnPropNameInTable="Total_SaleColumn" msprop:Generator_UserColumnName="Total_Sale" type="xs:string" minOccurs="0" />
+              <xs:element name="Price_Regular" msprop:Generator_ColumnVarNameInTable="columnPrice_Regular" msprop:Generator_ColumnPropNameInRow="Price_Regular" msprop:Generator_ColumnPropNameInTable="Price_RegularColumn" msprop:Generator_UserColumnName="Price_Regular" type="xs:string" minOccurs="0" />
+              <xs:element name="Price_Premium" msprop:Generator_ColumnVarNameInTable="columnPrice_Premium" msprop:Generator_ColumnPropNameInRow="Price_Premium" msprop:Generator_ColumnPropNameInTable="Price_PremiumColumn" msprop:Generator_UserColumnName="Price_Premium" type="xs:string" minOccurs="0" />
+              <xs:element name="Price_Diesel" msprop:Generator_ColumnVarNameInTable="columnPrice_Diesel" msprop:Generator_ColumnPropNameInRow="Price_Diesel" msprop:Generator_ColumnPropNameInTable="Price_DieselColumn" msprop:Generator_UserColumnName="Price_Diesel" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
