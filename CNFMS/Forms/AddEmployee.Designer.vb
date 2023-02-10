@@ -51,10 +51,10 @@ Partial Class AddEmployee
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(22, 43)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(300, 40)
+        Me.Label5.Size = New System.Drawing.Size(218, 30)
         Me.Label5.TabIndex = 77
         Me.Label5.Text = "Employee Information"
         '
@@ -109,7 +109,7 @@ Partial Class AddEmployee
         Me.FnameTxt.FocusedForeColor = System.Drawing.Color.Black
         Me.FnameTxt.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FnameTxt.ForeColor = System.Drawing.Color.Black
-        Me.FnameTxt.Location = New System.Drawing.Point(29, 145)
+        Me.FnameTxt.Location = New System.Drawing.Point(29, 117)
         Me.FnameTxt.Name = "FnameTxt"
         Me.FnameTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.FnameTxt.Radius = 5
@@ -129,7 +129,7 @@ Partial Class AddEmployee
         Me.positionTxtBox.FocusedForeColor = System.Drawing.Color.Black
         Me.positionTxtBox.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.positionTxtBox.ForeColor = System.Drawing.Color.Black
-        Me.positionTxtBox.Location = New System.Drawing.Point(29, 377)
+        Me.positionTxtBox.Location = New System.Drawing.Point(29, 349)
         Me.positionTxtBox.Name = "positionTxtBox"
         Me.positionTxtBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.positionTxtBox.Radius = 5
@@ -149,7 +149,7 @@ Partial Class AddEmployee
         Me.emailTextBox.FocusedForeColor = System.Drawing.Color.Black
         Me.emailTextBox.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.emailTextBox.ForeColor = System.Drawing.Color.Black
-        Me.emailTextBox.Location = New System.Drawing.Point(29, 454)
+        Me.emailTextBox.Location = New System.Drawing.Point(29, 426)
         Me.emailTextBox.Name = "emailTextBox"
         Me.emailTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.emailTextBox.Radius = 5
@@ -169,7 +169,7 @@ Partial Class AddEmployee
         Me.addressTextBox.FocusedForeColor = System.Drawing.Color.Black
         Me.addressTextBox.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.addressTextBox.ForeColor = System.Drawing.Color.Black
-        Me.addressTextBox.Location = New System.Drawing.Point(29, 533)
+        Me.addressTextBox.Location = New System.Drawing.Point(29, 505)
         Me.addressTextBox.Name = "addressTextBox"
         Me.addressTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.addressTextBox.Radius = 5
@@ -189,7 +189,7 @@ Partial Class AddEmployee
         Me.cotactTextBox.FocusedForeColor = System.Drawing.Color.Black
         Me.cotactTextBox.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cotactTextBox.ForeColor = System.Drawing.Color.Black
-        Me.cotactTextBox.Location = New System.Drawing.Point(29, 612)
+        Me.cotactTextBox.Location = New System.Drawing.Point(29, 584)
         Me.cotactTextBox.MaxLength = 11
         Me.cotactTextBox.Name = "cotactTextBox"
         Me.cotactTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -209,12 +209,12 @@ Partial Class AddEmployee
         Me.closeButton.BorderSize = 1
         Me.closeButton.DialogResult = System.Windows.Forms.DialogResult.None
         Me.closeButton.FocusedColor = System.Drawing.Color.Empty
-        Me.closeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.closeButton.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.closeButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.closeButton.Image = Nothing
         Me.closeButton.ImageOffsetX = 15
         Me.closeButton.ImageSize = New System.Drawing.Size(22, 22)
-        Me.closeButton.Location = New System.Drawing.Point(353, 675)
+        Me.closeButton.Location = New System.Drawing.Point(353, 646)
         Me.closeButton.Name = "closeButton"
         Me.closeButton.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.closeButton.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(44, Byte), Integer))
@@ -235,55 +235,55 @@ Partial Class AddEmployee
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(25, 119)
+        Me.Label1.Location = New System.Drawing.Point(25, 91)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(137, 23)
+        Me.Label1.Size = New System.Drawing.Size(105, 17)
         Me.Label1.TabIndex = 80
         Me.Label1.Text = "Enter First Name"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(25, 351)
+        Me.Label2.Location = New System.Drawing.Point(25, 323)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(146, 23)
+        Me.Label2.Size = New System.Drawing.Size(111, 17)
         Me.Label2.TabIndex = 80
         Me.Label2.Text = "Enter Designation"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(25, 428)
+        Me.Label3.Location = New System.Drawing.Point(25, 400)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(96, 23)
+        Me.Label3.Size = New System.Drawing.Size(73, 17)
         Me.Label3.TabIndex = 80
         Me.Label3.Text = "Enter Email"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(25, 507)
+        Me.Label4.Location = New System.Drawing.Point(25, 479)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(115, 23)
+        Me.Label4.Size = New System.Drawing.Size(90, 17)
         Me.Label4.TabIndex = 80
         Me.Label4.Text = "Enter Address"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(25, 586)
+        Me.Label6.Location = New System.Drawing.Point(25, 558)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(130, 23)
+        Me.Label6.Size = New System.Drawing.Size(98, 17)
         Me.Label6.TabIndex = 80
         Me.Label6.Text = "Enter Contact #"
         '
@@ -299,7 +299,7 @@ Partial Class AddEmployee
         Me.MnameTxt.FocusedForeColor = System.Drawing.Color.Black
         Me.MnameTxt.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MnameTxt.ForeColor = System.Drawing.Color.Black
-        Me.MnameTxt.Location = New System.Drawing.Point(29, 219)
+        Me.MnameTxt.Location = New System.Drawing.Point(29, 191)
         Me.MnameTxt.MaxLength = 3000
         Me.MnameTxt.Name = "MnameTxt"
         Me.MnameTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -311,11 +311,11 @@ Partial Class AddEmployee
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(25, 193)
+        Me.Label7.Location = New System.Drawing.Point(25, 165)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(158, 23)
+        Me.Label7.Size = New System.Drawing.Size(122, 17)
         Me.Label7.TabIndex = 80
         Me.Label7.Text = "Enter Middle Name"
         '
@@ -331,7 +331,7 @@ Partial Class AddEmployee
         Me.LnameTxt.FocusedForeColor = System.Drawing.Color.Black
         Me.LnameTxt.Font = New System.Drawing.Font("Segoe UI Semibold", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LnameTxt.ForeColor = System.Drawing.Color.Black
-        Me.LnameTxt.Location = New System.Drawing.Point(29, 301)
+        Me.LnameTxt.Location = New System.Drawing.Point(29, 273)
         Me.LnameTxt.Name = "LnameTxt"
         Me.LnameTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.LnameTxt.Radius = 5
@@ -342,11 +342,11 @@ Partial Class AddEmployee
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Black
-        Me.Label8.Location = New System.Drawing.Point(25, 275)
+        Me.Label8.Location = New System.Drawing.Point(25, 247)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(136, 23)
+        Me.Label8.Size = New System.Drawing.Size(104, 17)
         Me.Label8.TabIndex = 80
         Me.Label8.Text = "Enter Last Name"
         '
@@ -360,12 +360,12 @@ Partial Class AddEmployee
         Me.saveButton.BorderColor = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.saveButton.DialogResult = System.Windows.Forms.DialogResult.None
         Me.saveButton.FocusedColor = System.Drawing.Color.Empty
-        Me.saveButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.saveButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.saveButton.ForeColor = System.Drawing.Color.White
         Me.saveButton.Image = CType(resources.GetObject("saveButton.Image"), System.Drawing.Image)
         Me.saveButton.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.saveButton.ImageSize = New System.Drawing.Size(22, 22)
-        Me.saveButton.Location = New System.Drawing.Point(466, 675)
+        Me.saveButton.Location = New System.Drawing.Point(466, 646)
         Me.saveButton.Name = "saveButton"
         Me.saveButton.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(44, Byte), Integer))
         Me.saveButton.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(CType(CType(178, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(44, Byte), Integer))
@@ -384,7 +384,7 @@ Partial Class AddEmployee
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(602, 751)
+        Me.ClientSize = New System.Drawing.Size(602, 723)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
