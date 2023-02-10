@@ -17,8 +17,6 @@ Public Class AddEmployee
             Return cp
         End Get
     End Property 'CreateParams
-
-
     Private Sub AddEmployee_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Guna.UI.Lib.GraphicsHelper.ShadowForm(Me)
     End Sub
@@ -31,9 +29,6 @@ Public Class AddEmployee
         cotactTextBox.Text = ""
         Me.Close()
     End Sub
-
-
-
     Private Sub closeButton_Click(sender As Object, e As EventArgs) Handles closeButton.Click
         FnameTxt.Text = ""
         positionTxtBox.Text = ""
@@ -42,7 +37,6 @@ Public Class AddEmployee
         cotactTextBox.Text = ""
         Me.Close()
     End Sub
-
     Private Sub saveButton_Click(sender As Object, e As EventArgs) Handles saveButton.Click
         If FnameTxt.Text = String.Empty Then
             dialog1 = MessageBox.Show("Fill up the blanks!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
