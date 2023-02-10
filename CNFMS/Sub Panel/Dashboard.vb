@@ -328,9 +328,7 @@ Public Class Dashboard
             End Try
         End Using
 
-
         dailysaleTxt.Text = Format(Val(Decimal.Parse(island1Sale1) + Decimal.Parse(island2Sale2) + Decimal.Parse(island3Sale3)), "₱ 0.00")
-
 
     End Sub
 
